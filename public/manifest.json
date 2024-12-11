@@ -1,7 +1,7 @@
 {
-  "name": "Cinny",
-  "short_name": "Cinny",
-  "description": "Yet another matrix client",
+  "name": "xcelerator matrix",
+  "short_name": "xmatrix",
+  "description": "xcelerator community matrix client",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",

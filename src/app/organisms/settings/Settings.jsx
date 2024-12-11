@@ -403,33 +403,29 @@ function SecuritySection() {
 }
 
 function AboutSection() {
-  const mx = useMatrixClient();
+  // const mx = useMatrixClient();
 
   return (
     <div className="settings-about">
       <div className="settings-about__card">
         <MenuHeader>Application</MenuHeader>
         <div className="settings-about__branding">
-          <img width="60" height="60" src={CinnySVG} alt="Cinny logo" />
+          <img width="60" height="60" src={CinnySVG} alt="xcelerator logo" />
           <div>
             <Text variant="h2" weight="medium">
-              Cinny
-              <span
-                className="text text-b3"
-                style={{ margin: '0 var(--sp-extra-tight)' }}
-              >{`v${cons.version}`}</span>
+              xclerator matrix community
             </Text>
-            <Text>Yet another matrix client</Text>
+            <Text>Build with the xcelerator community</Text>
 
-            <div className="settings-about__btns">
-              <Button onClick={() => window.open('https://github.com/ajbura/cinny')}>
-                Source code
-              </Button>
-              <Button onClick={() => window.open('https://cinny.in/#sponsor')}>Support</Button>
-              <Button onClick={() => clearCacheAndReload(mx)} variant="danger">
-                Clear cache & reload
-              </Button>
-            </div>
+            {/* <div className="settings-about__btns"> */}
+            {/*   <Button onClick={() => window.open('https://github.com/ajbura/cinny')}> */}
+            {/*     Source code */}
+            {/*   </Button> */}
+            {/*   <Button onClick={() => window.open('https://cinny.in/#sponsor')}>Support</Button> */}
+            {/*   <Button onClick={() => clearCacheAndReload(mx)} variant="danger"> */}
+            {/*     Clear cache & reload */}
+            {/*   </Button> */}
+            {/* </div> */}
           </div>
         </div>
       </div>
@@ -437,6 +433,16 @@ function AboutSection() {
         <MenuHeader>Credits</MenuHeader>
         <div className="settings-about__credits">
           <ul>
+            <li>
+              {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
+              <Text>
+                This is a fork of{' '}
+                <a href="https://cinny.in" rel="noreferrer noopener" target="_blank">
+                  cinny
+                </a>{' '}
+                a minimal matrix client.
+              </Text>
+            </li>
             <li>
               {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
               <Text>
