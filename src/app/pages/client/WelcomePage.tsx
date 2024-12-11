@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Icon, Icons, Text, config, toRem } from 'folds';
+import { Box, config } from 'folds';
 import { Page, PageHero, PageHeroSection } from '../../components/page';
 import CinnySVG from '../../../../public/res/xclerator.png';
 
@@ -18,21 +18,20 @@ export function WelcomePage() {
             title="Welcome to xcelerator matrix"
             subTitle={<span>Build with the xcelerator matrix community in mind.</span>}
           >
-            <Box justifyContent="Center">
-              <Box grow="Yes" style={{ maxWidth: toRem(300) }} direction="Column" gap="300">
-                <Button
-                  as="a"
-                  href="https://vtu.xcelerator.co.in"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  before={<Icon size="200" src={Icons.Code} />}
-                >
-                  <Text as="span" size="B400" truncate>
-                    Source Code
-                  </Text>
-                </Button>
-              </Box>
-            </Box>
+            {/* <Box justifyContent="Center"> */}
+            {/*   <Box grow="Yes" style={{ maxWidth: toRem(300) }} direction="Column" gap="300"> */}
+            {/*     <Button */}
+            {/*       as="a" */}
+            {/*       href="https://vtu.xcelerator.co.in" */}
+            {/*       target="_blank" */}
+            {/*       rel="noreferrer noopener" */}
+            {/*     > */}
+            {/*       <Text as="span" size="B400" truncate> */}
+            {/*         xcelerator */}
+            {/*       </Text> */}
+            {/*     </Button> */}
+            {/*   </Box> */}
+            {/* </Box> */}
           </PageHero>
         </PageHeroSection>
       </Box>
