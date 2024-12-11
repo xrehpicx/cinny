@@ -1,39 +1,44 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/config.json",
-      "destination": "/config.json"
+      "destination": "/config.json",
+      "permanent": true
     },
     {
       "source": "/manifest.json",
-      "destination": "/manifest.json"
+      "destination": "/manifest.json",
+      "permanent": true
     },
     {
       "source": "/sw.js",
-      "destination": "/sw.js"
+      "destination": "/sw.js",
+      "permanent": true
     },
     {
-      "source": "/olm.wasm",
-      "destination": "/olm.wasm"
+      "source": "/:path*/olm.wasm",
+      "destination": "/olm.wasm",
+      "permanent": true
     },
     {
       "source": "/pdf.worker.min.js",
-      "destination": "/pdf.worker.min.js"
+      "destination": "/pdf.worker.min.js",
+      "permanent": true
     },
     {
-      "source": "/public/:path*",
-      "destination": "/public/:path*"
+      "source": "/public/:splat*",
+      "destination": "/public/:splat*",
+      "permanent": true
     },
     {
-      "source": "/assets/:path*",
-      "destination": "/assets/:path*"
-    }
-  ],
-  "redirects": [
+      "source": "/assets/:splat*",
+      "destination": "/assets/:splat*",
+      "permanent": true
+    },
     {
-      "source": "/:path((?!index.html).*)",
+      "source": "/:path*",
       "destination": "/index.html",
-      "statusCode": 200
+      "permanent": true
     }
   ]
 }
