@@ -1,41 +1,6 @@
 {
   "redirects": [
     {
-      "source": "/config.json",
-      "destination": "/config.json",
-      "permanent": true
-    },
-    {
-      "source": "/manifest.json",
-      "destination": "/manifest.json",
-      "permanent": true
-    },
-    {
-      "source": "/sw.js",
-      "destination": "/sw.js",
-      "permanent": true
-    },
-    {
-      "source": "/:path*/olm.wasm",
-      "destination": "/olm.wasm",
-      "permanent": true
-    },
-    {
-      "source": "/pdf.worker.min.js",
-      "destination": "/pdf.worker.min.js",
-      "permanent": true
-    },
-    {
-      "source": "/public/:splat*",
-      "destination": "/public/:splat*",
-      "permanent": true
-    },
-    {
-      "source": "/assets/:splat*",
-      "destination": "/assets/:splat*",
-      "permanent": true
-    },
-    {
       "source": "/:path*",
       "destination": "/index.html",
       "permanent": true
