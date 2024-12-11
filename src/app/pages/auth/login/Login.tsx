@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { Box, Text, color } from 'folds';
-import { Link, useSearchParams } from 'react-router-dom';
+import { /* Link */ useSearchParams } from 'react-router-dom';
 import { useAuthFlows } from '../../../hooks/useAuthFlows';
 import { useAuthServer } from '../../../hooks/useAuthServer';
 import { useParsedLoginFlows } from '../../../hooks/useParsedLoginFlows';
@@ -8,7 +8,7 @@ import { PasswordLoginForm } from './PasswordLoginForm';
 import { SSOLogin } from '../SSOLogin';
 import { TokenLogin } from './TokenLogin';
 import { OrDivider } from '../OrDivider';
-import { getLoginPath, getRegisterPath, withSearchParam } from '../../pathUtils';
+import { getLoginPath, /* getRegisterPath */ withSearchParam } from '../../pathUtils';
 import { usePathWithOrigin } from '../../../hooks/usePathWithOrigin';
 import { LoginPathSearchParams } from '../../paths';
 import { useClientConfig } from '../../../hooks/useClientConfig';
@@ -89,9 +89,9 @@ export function Login() {
           <span data-spacing-node />
         </>
       )}
-      <Text align="Center">
-        Do not have an account? <Link to={getRegisterPath(server)}>Register</Link>
-      </Text>
+      {/* <Text align="Center"> */}
+      {/*   Do not have an account? <Link to={getRegisterPath(server)}>Register</Link> */}
+      {/* </Text> */}
     </Box>
   );
 }

@@ -40,7 +40,8 @@ import InfoIC from '../../../../public/res/ic/outlined/info.svg';
 import PowerIC from '../../../../public/res/ic/outlined/power.svg';
 import CrossIC from '../../../../public/res/ic/outlined/cross.svg';
 
-import CinnySVG from '../../../../public/res/svg/cinny.svg';
+// import CinnySVG from '../../../../public/res/svg/cinny.svg';
+import CinnySVG from '../../../../public/res/xclerator.png';
 import { confirmDialog } from '../../molecules/confirm-dialog/ConfirmDialog';
 import { useSetting } from '../../state/hooks/settings';
 import { settingsAtom } from '../../state/settings';
@@ -198,9 +199,8 @@ function AppearanceSection() {
             />
           }
           content={
-            <Text variant="b3">{`Use ${
-              isMacOS() ? KeySymbol.Command : 'Ctrl'
-            } + ENTER to send message and ENTER for newline.`}</Text>
+            <Text variant="b3">{`Use ${isMacOS() ? KeySymbol.Command : 'Ctrl'
+              } + ENTER to send message and ENTER for newline.`}</Text>
           }
         />
         <SettingTile
