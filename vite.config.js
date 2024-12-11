@@ -25,6 +25,10 @@ const copyFiles = {
       dest: '',
     },
     {
+      src: 'vercel.json',
+      dest: '',
+    },
+    {
       src: 'config.json',
       dest: '',
     },
