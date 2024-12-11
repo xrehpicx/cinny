@@ -2,7 +2,7 @@
   "homeserverList": ["matrix.xcelerator.co.in"],
   "allowCustomHomeservers": false,
   "hashRouter": {
-    "enabled": false,
+    "enabled": true,
     "basename": "/"
   }
 }
