@@ -2,24 +2,22 @@ import React, { useRef } from 'react';
 import { Icon, Icons, Scroll } from 'folds';
 
 import {
-  Sidebar,
-  SidebarContent,
-  SidebarStackSeparator,
-  SidebarStack,
-  SidebarAvatar,
-  SidebarItemTooltip,
-  SidebarItem,
+    Sidebar,
+    SidebarContent,
+    SidebarStackSeparator,
+    SidebarStack,
+    SidebarAvatar,
+    SidebarItemTooltip,
+    SidebarItem,
 } from '../../components/sidebar';
 import {
-  DirectTab,
-  HomeTab,
-  SpaceTabs,
-  InboxTab,
-  ExploreTab,
-  UserTab,
-  UnverifiedTab,
+    DirectTab,
+    HomeTab,
+    SpaceTabs,
+    InboxTab, UserTab,
+    UnverifiedTab
 } from './sidebar';
-import { openCreateRoom, openSearch } from '../../../client/action/navigation';
+import { openSearch } from '../../../client/action/navigation';
 
 export function SidebarNav() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -34,24 +32,24 @@ export function SidebarNav() {
               <DirectTab />
             </SidebarStack>
             <SpaceTabs scrollRef={scrollRef} />
-            <SidebarStackSeparator />
-            <SidebarStack>
-              <ExploreTab />
-              <SidebarItem>
-                <SidebarItemTooltip tooltip="Create Space">
-                  {(triggerRef) => (
-                    <SidebarAvatar
-                      as="button"
-                      ref={triggerRef}
-                      outlined
-                      onClick={() => openCreateRoom(true)}
-                    >
-                      <Icon src={Icons.Plus} />
-                    </SidebarAvatar>
-                  )}
-                </SidebarItemTooltip>
-              </SidebarItem>
-            </SidebarStack>
+            {/* <SidebarStackSeparator /> */}
+            {/* <SidebarStack> */}
+            {/*   <ExploreTab /> */}
+            {/*   <SidebarItem> */}
+            {/*     <SidebarItemTooltip tooltip="Create Space"> */}
+            {/*       {(triggerRef) => ( */}
+            {/*         <SidebarAvatar */}
+            {/*           as="button" */}
+            {/*           ref={triggerRef} */}
+            {/*           outlined */}
+            {/*           onClick={() => openCreateRoom(true)} */}
+            {/*         > */}
+            {/*           <Icon src={Icons.Plus} /> */}
+            {/*         </SidebarAvatar> */}
+            {/*       )} */}
+            {/*     </SidebarItemTooltip> */}
+            {/*   </SidebarItem> */}
+            {/* </SidebarStack> */}
           </Scroll>
         }
         sticky={
